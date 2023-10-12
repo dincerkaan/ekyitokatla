@@ -1,38 +1,39 @@
-.App {
-  text-align: center;
+/* styles/globals.css */
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	/* Ekran yüksekliği kadar alan kaplar */
+	text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.gif-container {
+	margin-top: 20px;
+	/* İhtiyaca göre ayarlayabilirsiniz */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.gif {
+	width: 400px;
+	/* Gif boyutunu istediğiniz gibi ayarlayabilirsiniz */
+	height: 400px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.custom-button {
+	border: none;
+	border-radius: 50%; /* Butonu yuvarlak yapmak için */
+	background-color: transparent; /* Arka planı şeffaf yapmak için */
+	cursor: pointer;
+	position: relative;
+	transition: background-color 0.3s ease; /* Hover ettiğinde arka plan renginin değişmesi için animasyon eklemek */
 }
 
-.App-link {
-  color: #61dafb;
+.custom-button:hover {
+	background-color: red; /* Üzerine gelindiğinde arka plan rengini kırmızı yapmak */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-icon {
+	width: 50px; /* İkon genişliği */
+	height: 50px; /* İkon yüksekliği */
 }
